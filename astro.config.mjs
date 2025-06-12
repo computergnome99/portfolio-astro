@@ -1,6 +1,5 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-import node from '@astrojs/node';
 // @ts-ignore No type definition for this package
 import htmx from 'astro-htmx';
 
@@ -12,7 +11,6 @@ import vercel from '@astrojs/vercel';
 
 // https://astro.build/config
 export default defineConfig({
-  output: 'server',
   integrations: [htmx(), mdx(), svelte()],
   markdown: {
     shikiConfig: {
@@ -26,7 +24,6 @@ export default defineConfig({
     responsiveImages: true,
   },
   adapter: vercel(),
-  server: {
-    host: '0.0.0.0',
-  },
+  output: 'server',
 });
+
