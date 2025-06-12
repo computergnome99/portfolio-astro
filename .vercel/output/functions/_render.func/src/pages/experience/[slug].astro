@@ -1,0 +1,47 @@
+---
+import FrameLayout from '@layouts/FrameLayout.astro';
+import { Title } from '@components/title';
+import { Chip, ChipBowl } from '@components/chip';
+import type { GetStaticPaths } from 'astro';
+import { render } from 'astro:content';
+import { getEntry } from 'astro:content';
+const { slug } = Astro.params;
+
+const page = await getEntry('experience', slug);
+
+if (page === undefined) return Astro.redirect('/experience');
+
+const { Content } = await render(page);
+---
+
+<FrameLayout>
+  <title slot="head">Experience / {page.data.title}</title>
+
+  <Title
+    slot="title"
+    parts={{
+      '~': '/',
+      experience: '/experience',
+      [slug as string]: `/experience/${slug ?? ''}`,
+    }}
+  />
+
+  <h1>{page.data.title}</h1>
+
+  <ChipBowl>
+    <Chip color="blue"> {page.data.date} </Chip>
+
+    {!!page.data.role && <Chip color="teal"> {page.data.role} </Chip>}
+
+    {
+      !!page.data.link && (
+        <Chip color="teal">
+          {' '}
+          <a href={page.data.link}>related link</a> (external)
+        </Chip>
+      )
+    }
+  </ChipBowl>
+
+  <Content />
+</FrameLayout>

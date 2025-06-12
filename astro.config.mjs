@@ -8,6 +8,8 @@ import mdx from '@astrojs/mdx';
 
 import svelte from '@astrojs/svelte';
 
+import vercel from '@astrojs/vercel';
+
 // https://astro.build/config
 export default defineConfig({
   output: 'server',
@@ -23,11 +25,8 @@ export default defineConfig({
   experimental: {
     responsiveImages: true,
   },
-  adapter: node({
-    mode: 'standalone',
-  }),
+  adapter: vercel(),
   server: {
     host: '0.0.0.0',
   },
 });
-
