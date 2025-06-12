@@ -80,12 +80,13 @@
       this.move();
     }
 
-    constructor() {
+    constructor(index: number = 0) {
       const color = colors[Math.floor(Math.random() * colors.length)];
 
       this.el = document.createElement('div');
       this.el.className = 'background-node';
       this.el.style.setProperty('background-color', `var(--${color})`);
+      this.el.style.setProperty('z-index', `${index}`);
       this.el.setAttribute('aria-hidden', 'true');
 
       this.move();
@@ -105,7 +106,7 @@
     console.log('onMount called');
 
     for (let i = 0; i < 5; i++) {
-      bgEl!.appendChild(new BackgroundNode().el);
+      bgEl!.appendChild(new BackgroundNode(i).el);
     }
 
     updateBg();
