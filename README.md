@@ -13,3 +13,9 @@ discussion if you see anything that could use improvement or if you have a
 question about something.
 
 [Link to Live Site](https://www.calvinbonner.dev)
+
+## To-do:
+
+- [ ] Fix z fighting on mobile browsers (maybe move to SVG-based background?)
+- [ ] Update favicon
+- [ ] Add more content!!
