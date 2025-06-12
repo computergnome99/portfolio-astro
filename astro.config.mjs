@@ -20,10 +20,6 @@ export default defineConfig({
       },
     },
   },
-  experimental: {
-    responsiveImages: true,
-  },
-  adapter: vercel(),
   output: 'server',
+  adapter: vercel(),
 });
-
