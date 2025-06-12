@@ -1,0 +1,68 @@
+---
+import House from '@assets/svg/house.svg';
+import User from '@assets/svg/user.svg';
+import Briefcase from '@assets/svg/briefcase.svg';
+import Lightbulb from '@assets/svg/lightbulb.svg';
+import Messages from '@assets/svg/messages.svg';
+---
+
+<ul>
+  <li>
+    <a href="/" aria-label="index">
+      <House />
+    </a>
+  </li>
+
+  <li>
+    <a href="/about" aria-label="about">
+      <User />
+    </a>
+  </li>
+
+  <li>
+    <a href="/experience" aria-label="experience">
+      <Briefcase />
+    </a>
+  </li>
+
+  <li>
+    <a href="/demos" aria-label="demos">
+      <Lightbulb />
+    </a>
+  </li>
+
+  <li>
+    <a href="/contact" aria-label="contact">
+      <Messages />
+    </a>
+  </li>
+</ul>
+
+<style>
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1rem;
+    list-style: none;
+
+    @media screen and (min-width: 640px) {
+      flex-direction: column;
+      padding: 1rem 0;
+    }
+  }
+
+  svg {
+    width: 1em;
+    height: 1em;
+    fill: var(--text);
+  }
+
+  li {
+    padding: 0.75rem;
+    font-size: 1.25rem;
+    list-style: none;
+  }
+</style>

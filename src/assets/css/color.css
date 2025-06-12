@@ -1,0 +1,190 @@
+:root {
+  color-scheme: light dark;
+}
+
+@property --rosewater {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #dc8a78;
+}
+
+@property --flamingo {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #dd7878;
+}
+
+@property --pink {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #ea76cb;
+}
+
+@property --mauve {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #8839ef;
+}
+
+@property --red {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #d20f39;
+}
+
+@property --maroon {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #e64553;
+}
+
+@property --peach {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #fe640b;
+}
+
+@property --yellow {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #df8e1d;
+}
+
+@property --green {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #40a02b;
+}
+
+@property --teal {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #179299;
+}
+
+@property --sky {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #04a5e5;
+}
+
+@property --sapphire {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #209fb5;
+}
+
+@property --blue {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #1e66f5;
+}
+
+@property --lavender {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #7287fd;
+}
+
+@property --text {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #4c4f69;
+}
+
+@property --subtext1 {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #5c5f77;
+}
+
+@property --subtext0 {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #6c6f85;
+}
+
+@property --overlay2 {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #7c7f93;
+}
+
+@property --overlay1 {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #8c8fa1;
+}
+
+@property --overlay0 {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #9ca0b0;
+}
+
+@property --surface2 {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #acb0be;
+}
+
+@property --surface1 {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #bcc0cc;
+}
+
+@property --surface0 {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #ccd0da;
+}
+
+@property --base {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #eff1f5;
+}
+
+@property --mantle {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #e6e9ef;
+}
+
+@property --crust {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #dce0e8;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:root {
+    --rosewater: #f5e0dc;
+    --flamingo: #f2cdcd;
+    --pink: #f5c2e7;
+    --mauve: #cba6f7;
+    --red: #f38ba8;
+    --maroon: #eba0ac;
+    --peach: #fab387;
+    --yellow: #f9e2af;
+    --green: #a6e3a1;
+    --teal: #94e2d5;
+    --sky: #89dceb;
+    --sapphire: #74c7ec;
+    --blue: #89b4fa;
+    --lavender: #b4befe;
+    --text: #cdd6f4;
+    --subtext1: #bac2de;
+    --subtext0: #a6adc8;
+    --overlay2: #9399b2;
+    --overlay1: #7f849c;
+    --overlay0: #6c7086;
+    --surface2: #585b70;
+    --surface1: #45475a;
+    --surface0: #313244;
+    --base: #1e1e2e;
+    --mantle: #181825;
+    --crust: #11111b;
+  }
+}

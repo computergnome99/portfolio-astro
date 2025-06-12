@@ -1,0 +1,43 @@
+---
+import { Highlight } from '../highlight';
+
+interface Props {
+  color:
+    | 'rosewater'
+    | 'flamingo'
+    | 'pink'
+    | 'mauve'
+    | 'red'
+    | 'maroon'
+    | 'peach'
+    | 'yellow'
+    | 'green'
+    | 'teal'
+    | 'sky'
+    | 'sapphire'
+    | 'blue'
+    | 'lavender';
+}
+
+const { color = 'red' } = Astro.props;
+---
+
+<li>
+  <Highlight color={color}>
+    <slot />
+  </Highlight>
+</li>
+
+<style>
+  li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    white-space: nowrap;
+
+    &::marker {
+      all: unset;
+      content: '';
+    }
+  }
+</style>

@@ -1,0 +1,13 @@
+---
+import FrameLayout from '@layouts/FrameLayout.astro';
+import { Title } from '@components/title';
+import Data from '@assets/md/about.mdx';
+---
+
+<FrameLayout>
+  <title slot="head">About</title>
+
+  <Title slot="title" parts={{ '~': '/', about: '/about' }} />
+
+  <Data />
+</FrameLayout>

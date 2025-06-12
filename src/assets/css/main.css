@@ -1,0 +1,317 @@
+@import 'reset.css';
+@import 'color.css';
+@import 'font.css';
+
+*,
+::before,
+::after {
+  transition-duration: 0.15s;
+  transition-property: none;
+  transition-timing-function: ease-in-out;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: var(--text);
+  color: var(--base);
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  color: var(--text);
+  font-family: sans-serif;
+}
+
+main {
+  * {
+    max-width: 80ch;
+  }
+
+  b,
+  strong {
+    color: var(--maroon);
+    font-weight: bold;
+
+    &::selection {
+      background-color: var(--pink);
+    }
+  }
+
+  i,
+  em {
+    color: var(--red);
+    font-style: italic;
+
+    &::selection {
+      background-color: var(--pink);
+    }
+  }
+
+  hr {
+    margin: 1rem 0;
+    border-color: var(--pink);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 1rem 0;
+    font-weight: bold;
+
+    &::before {
+      padding-right: 0.25em;
+      font-weight: normal;
+    }
+  }
+
+  h1 {
+    color: var(--red);
+
+    &::before {
+      content: '#';
+    }
+
+    &::selection {
+      background-color: var(--red);
+    }
+  }
+
+  h2 {
+    color: var(--peach);
+
+    &::before {
+      content: '##';
+    }
+
+    &::selection {
+      background-color: var(--peach);
+    }
+  }
+
+  h3 {
+    color: var(--yellow);
+
+    &::before {
+      content: '###';
+    }
+
+    &::selection {
+      background-color: var(--yellow);
+    }
+  }
+
+  h4 {
+    color: var(--green);
+
+    &::before {
+      content: '####';
+    }
+
+    &::selection {
+      background-color: var(--green);
+    }
+  }
+
+  h5 {
+    color: var(--sapphire);
+
+    &::before {
+      content: '#####';
+    }
+
+    &::selection {
+      background-color: var(--sapphire);
+    }
+  }
+
+  h6 {
+    color: var(--lavender);
+
+    &::before {
+      content: '######';
+    }
+
+    &::selection {
+      background-color: var(--lavender);
+    }
+  }
+
+  p {
+    margin: 1rem 0;
+  }
+
+  ul {
+    margin: 1rem 0;
+    padding-left: 0.5em;
+    list-style: disc;
+
+    & > li {
+      margin: 0.5rem 0;
+      padding-left: 0.5em;
+    }
+
+    & > li.task-list-item {
+      margin-left: -0.5em;
+      padding-left: 0em;
+    }
+
+    & > li::marker {
+      content: '-';
+      color: var(--pink);
+    }
+
+    & > li.task-list-item::marker {
+      content: '';
+    }
+
+    & ul,
+    & ol {
+      margin: 0;
+    }
+  }
+
+  ol {
+    margin: 1rem 0;
+    padding-left: 2em;
+    list-style: decimal;
+
+    & > li {
+      margin: 0.5rem 0;
+    }
+
+    & > li::marker {
+      color: var(--pink);
+    }
+
+    & ul,
+    & ol {
+      margin: 0;
+    }
+  }
+
+  blockquote:not(blockquote blockquote) {
+    background-color: rgb(from var(--crust) r g b / 0.25);
+    padding: 0.5em 0.25em;
+  }
+
+  blockquote {
+    border-radius: 0.25em;
+
+    & p:first-child {
+      margin-top: 0;
+    }
+
+    & p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  code:not(.astro-code code) {
+    display: inline-block;
+    margin: 0 -0.25rem;
+    border-radius: 0.25em;
+    background-color: rgb(from var(--crust) r g b / 0.25);
+    padding: 0.15rem 0.45rem;
+    color: var(--teal);
+
+    &::selection {
+      background-color: var(--teal);
+    }
+  }
+
+  .astro-code {
+    border-radius: 0.25em;
+    background-color: rgb(from var(--crust) r g b / 0.25) !important;
+    padding: 0.5em 0.25em;
+    line-height: 1.25;
+
+    & span {
+      background-color: none !important;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .astro-code,
+    .astro-code span {
+      color: var(--shiki-dark) !important;
+    }
+  }
+
+  table {
+    width: max-content;
+    table-layout: auto;
+    overflow: auto;
+  }
+
+  th {
+    color: var(--blue);
+    font-weight: bold;
+
+    &::selection {
+      background-color: var(--blue);
+    }
+  }
+
+  tr::after {
+    content: '|';
+    color: var(--pink);
+    font-weight: normal;
+  }
+
+  thead tr::after {
+    content: '|\A|';
+    line-height: 1.5;
+    white-space: pre;
+  }
+
+  th,
+  td {
+    cursor: default;
+    padding: 0.15em 0.25em;
+    line-height: 1.25;
+    text-align: left;
+  }
+
+  th::before,
+  td::before {
+    content: '|';
+    color: var(--pink);
+    font-weight: normal;
+  }
+
+  th::after {
+    display: block;
+    padding-top: 0.25em;
+    content: '| ---';
+    color: var(--pink);
+    font-weight: normal;
+  }
+
+  a {
+    color: var(--sapphire);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &::before {
+      content: '[';
+      color: var(--lavender);
+    }
+
+    &::after {
+      content: ']';
+      color: var(--lavender);
+    }
+
+    &::selection {
+      background-color: var(--sapphire);
+    }
+  }
+}

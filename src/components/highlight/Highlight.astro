@@ -1,0 +1,48 @@
+---
+interface Props {
+  color:
+    | 'rosewater'
+    | 'flamingo'
+    | 'pink'
+    | 'mauve'
+    | 'red'
+    | 'maroon'
+    | 'peach'
+    | 'yellow'
+    | 'green'
+    | 'teal'
+    | 'sky'
+    | 'sapphire'
+    | 'blue'
+    | 'lavender';
+}
+
+const { color = 'red' } = Astro.props;
+---
+
+<b style={`--text-color: var(--${color}`}>
+  <slot />
+</b>
+
+<style>
+  b {
+    display: inline-block;
+    margin: 0 -0.25rem;
+    border-radius: 0.25em;
+    background-color: var(--text-color);
+    padding: 0.15em 0.45em;
+    color: var(--base);
+
+    &::selection,
+    & > :global(a)::selection {
+      background-color: var(--base);
+      color: var(--text-color);
+    }
+
+    & > :global(a),
+    & > :global(a)::before,
+    & > :global(a)::after {
+      color: var(--base);
+    }
+  }
+</style>
