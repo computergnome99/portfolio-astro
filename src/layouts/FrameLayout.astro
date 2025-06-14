@@ -1,19 +1,16 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import { Background } from '@components/background';
-import { ClientRouter } from 'astro:transitions';
 import { Navigation } from '@components/navigation';
 ---
 
 <BaseLayout>
   <slot slot="head" name="head" />
-  <ClientRouter slot="head" />
-
-  <Background transition:persist client:load />
+  <Background client:load />
 
   <div frame-outer>
     <div frame-inner>
-      <nav aria-label="Primary" transition:persist>
+      <nav aria-label="Primary">
         <Navigation />
       </nav>
 
@@ -55,7 +52,8 @@ import { Navigation } from '@components/navigation';
 
   nav,
   [content-outer] {
-    backdrop-filter: blur(8px);
+    /* backdrop-filter: blur(8px); */
+    position: relative;
 
     box-shadow: inset max(-33vw, -356px) max(-33vw, -284px) max(66vw, 713px)
       rgb(from var(--base) r g b / 0.15);

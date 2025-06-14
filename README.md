@@ -16,6 +16,6 @@ question about something.
 
 ## To-do:
 
-- [ ] Fix z fighting on mobile browsers (maybe move to SVG-based background?)
+- [x] Fix z fighting on mobile browsers (maybe move to SVG-based background?)
 - [ ] Update favicon
 - [ ] Add more content!!

@@ -4,10 +4,6 @@ interface Props {
 }
 
 const { parts } = Astro.props;
-
-Object.entries(parts).map(([title, route]) => {
-  console.log(`Title: ${title}`, `Route: ${route}`);
-});
 ---
 
 <nav>

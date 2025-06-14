@@ -1,17 +1,15 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-// @ts-ignore No type definition for this package
-import htmx from 'astro-htmx';
-
-import mdx from '@astrojs/mdx';
 
 import svelte from '@astrojs/svelte';
+
+import mdx from '@astrojs/mdx';
 
 import vercel from '@astrojs/vercel';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [htmx(), mdx(), svelte()],
+  integrations: [mdx(), svelte()],
   markdown: {
     shikiConfig: {
       themes: {
@@ -19,6 +17,9 @@ export default defineConfig({
         dark: 'catppuccin-mocha',
       },
     },
+  },
+  prefetch: {
+    prefetchAll: true,
   },
   output: 'server',
   adapter: vercel(),
