@@ -23,7 +23,6 @@
 
   function swapColor(): void {
       const color = colors[Math.floor(Math.random() * colors.length)];
-      console.log(color);
       element.style.setProperty('--shadow-color', `var(--${color})`);
   }
 

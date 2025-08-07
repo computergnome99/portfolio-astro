@@ -96,8 +96,6 @@
   }
 
   onMount(() => {
-    console.log('onMount called');
-
     for (let i = 0; i < 3; i++) {
       bgEl!.appendChild(new BackgroundNode(i).el);
     }

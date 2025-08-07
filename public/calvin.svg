@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920"
+   height="1920"
+   viewBox="0 0 507.99999 508.00001"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="calvin.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="px"
+     showgrid="false"
+     units="px"
+     width="1920px"
+     borderlayer="false"
+     inkscape:showpageshadow="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-text-baseline="true"
+     inkscape:snap-center="true"
+     inkscape:zoom="0.30757452"
+     inkscape:cx="812.81116"
+     inkscape:cy="924.9791"
+     inkscape:window-width="1649"
+     inkscape:window-height="996"
+     inkscape:window-x="24"
+     inkscape:window-y="60"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Text"
+     id="layer1"
+     style="display:inline"
+     inkscape:groupmode="layer">
+    <rect
+       style="fill:#ffffff;stroke:none;stroke-width:3.70401;stroke-linecap:round;stroke-linejoin:round;stop-color:#000000"
+       id="rect9816"
+       width="508"
+       height="508"
+       x="-1.0835777e-13"
+       y="-6.5392136e-14"
+       rx="26.458334"
+       ry="26.458334" />
+    <g
+       aria-label="&lt;c/&gt;"
+       id="text4610"
+       style="font-weight:bold;font-size:183.444px;line-height:1.25;font-family:'FiraCode Nerd Font';-inkscape-font-specification:'FiraCode Nerd Font, Bold';stroke-width:0.264583"
+       inkscape:groupmode="layer">
+      <path
+         d="m 115.05333,205.08159 12.98219,20.5081 -61.053922,35.65399 61.053922,34.99547 -13.45256,21.16661 -73.283522,-45.53174 v -21.07254 z"
+         id="path8292" />
+      <path
+         d="m 207.24543,300.09618 q 6.1148,0 11.47701,-2.35185 5.45628,-2.44592 10.81849,-6.20887 l 13.26441,18.81476 q -6.58516,5.64444 -16.08662,9.40739 -9.40739,3.76295 -21.07254,3.76295 -16.08663,0 -27.65772,-6.58517 -11.57108,-6.67924 -17.77995,-18.43847 -6.20888,-11.8533 -6.20888,-27.46956 0,-15.61626 6.30295,-27.75179 6.39702,-12.2296 18.06218,-19.19106 11.75923,-6.96147 27.84586,-6.96147 11.38293,0 20.22588,3.19851 8.93701,3.10444 16.36884,9.31331 l -12.88811,17.87403 q -5.07999,-3.5748 -10.72442,-5.55035 -5.64443,-1.97555 -11.75923,-1.97555 -10.0659,0 -16.27478,7.14961 -6.1148,7.05554 -6.1148,23.89476 0,11.00664 2.91629,17.40366 2.91629,6.30295 7.90221,9.03109 5.07998,2.63407 11.38293,2.63407 z"
+         id="path8294" />
+      <path
+         d="m 301.41282,341.39459 -23.23624,-10.63034 79.1161,-164.15886 23.04809,10.63034 -7.43183,15.42811 93.79162,57.94949 v 21.26069 l -73.28352,45.53174 -13.45256,-20.22587 61.148,-35.93621 -78.92796,-46.19026 z"
+         id="path8296" />
+    </g>
+  </g>
+</svg>
