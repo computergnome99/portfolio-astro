@@ -33,6 +33,10 @@ import { Navigation } from '@components/navigation';
     width: 100%;
     height: 100%;
     overflow: hidden;
+
+    @media print {
+      display: contents;
+    }
   }
 
   [frame-inner] {
@@ -45,14 +49,17 @@ import { Navigation } from '@components/navigation';
     max-height: 860px;
     overflow: hidden;
 
-    @media (min-width: 640px) {
+    @media screen and (min-width: 640px) {
       grid-template-columns: auto 1fr;
+    }
+
+    @media print {
+      display: contents;
     }
   }
 
   nav,
   [content-outer] {
-    /* backdrop-filter: blur(8px); */
     position: relative;
 
     box-shadow: inset max(-33vw, -356px) max(-33vw, -284px) max(66vw, 713px)
@@ -74,11 +81,15 @@ import { Navigation } from '@components/navigation';
     border-radius: 0.25rem 0.25rem 1rem 1rem;
     height: 4rem;
 
-    @media (min-width: 640px) {
+    @media screen and (min-width: 640px) {
       grid-row: unset;
       border-radius: 1rem 0.25rem 0.25rem 1rem;
       width: 4rem;
       height: unset;
+    }
+
+    @media print {
+      display: none;
     }
   }
 
@@ -89,9 +100,13 @@ import { Navigation } from '@components/navigation';
     border-radius: 1rem 1rem 0.25rem 0.25rem;
     overflow: hidden;
 
-    @media (min-width: 640px) {
+    @media screen and (min-width: 640px) {
       grid-row: unset;
       border-radius: 0.25rem 1rem 1rem 0.25rem;
+    }
+
+    @media print {
+      display: contents;
     }
   }
 

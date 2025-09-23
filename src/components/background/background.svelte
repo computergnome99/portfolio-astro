@@ -49,5 +49,9 @@
     background-color: var(--crust);
     width: 100dvw;
     height: 100dvh;
+
+    @media print {
+      display: none;
+    }
   }
 </style>
