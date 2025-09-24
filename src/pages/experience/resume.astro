@@ -1,0 +1,20 @@
+---
+import FrameLayout from '@layouts/FrameLayout.astro';
+import { Title } from '@components/title';
+import Data from '@assets/md/resume.mdx';
+---
+
+<FrameLayout>
+  <title slot="head">Calvin Bonner // Resume</title>
+
+  <Title
+    slot="title"
+    parts={{
+      '~': '/',
+      experience: '/experience',
+      resume: '/experience/resume',
+    }}
+  />
+
+  <Data />
+</FrameLayout>
